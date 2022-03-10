@@ -1,0 +1,11 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introducción}{1}{section.1}%
+\contentsline {section}{\numberline {2}Ejemplo básicos}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}REData}{2}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Ampliaciones}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}/info}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}/tiempo\_hoy}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}/caracas}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}/presio}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}/cripto}{5}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Link al Github}{6}{section.4}%

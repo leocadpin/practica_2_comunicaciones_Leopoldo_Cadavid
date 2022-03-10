@@ -1,0 +1,252 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+
+
+
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[spanish]{babel} %Paquete de idioma
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+
+\graphicspath{{imagenes/}}
+
+\title{Memoria Práctica 2 \\
+
+
+\large Comunicaciones
+}
+\author{
+Leopoldo Cadavid Piñero
+}
+\date{Febrero 2022}
+
+
+
+
+
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introducción}
+      
+
+\section{Ejemplo básicos}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La siguiente forma de tratar los datos de la api de Openweather es mediante la ampliación \verb|Node Red|. Esta ampliación es 
+muy usada en el ámbito de las conexiones entre dispositivos, páginas, etc, ya que mediante una interfaz sencilla e inttuitiva podemos conseguir
+conectar y tratar información de distintas apis y combinar estas.\\
+
+En la siguiente imagen veremos el flow hecho para obtener el archivo JSON de Openweather mediante el nodo especifico de Openweather para Node Red.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{flowcaracas.png}
+    \caption{Flow de nodered para obtener la temperatura en Caracas}
+    \label{fig: noderedOpenweather}
+\end{figure}
+
+El siguiente código sería el que usamos para obtener el contenido de json y lo metemos pasamos al nodo Gauge:
+\begin{verbatim}
+variable = msg.payload
+msg.payload = variable.tempc
+return msg;
+\end{verbatim}
+
+Y cuando accedemos a la UI  de nodered observamos el resultado:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{gauge_donut.png}
+    \caption{Gauge en formato donut}
+    \label{GaugeCaracas}
+\end{figure}
+
+\subsection{REData}
+
+La otra api que hemos usado en clase ha sido la del servicio REData, la cual proporciona 
+información relacionada con la red electrica española. En ella podemos obtener información de diversos 
+ámbitos (mercado, balances, importaciones...). En el siguiente ejemplo vemos una  implementación en nodered, usando el bloque httpRequest
+para sacar los archivos JSON. \\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{noderedportugal.png}
+    \caption{Flow de uso de REData}
+    \label{nodeport}
+\end{figure}
+
+Y aquí podemos ver la salida en la interfaz de la dashboard.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{graficasportugal.png}
+    \caption{Charts de las importaciones de energía desde Portugal en 2019 por meses}
+    \label{grafport}
+\end{figure}
+
+\section{Ampliaciones}
+
+La ampliación realizada para la práctica consiste en un bot de telegram que reune todas las APIS vistas y además hace uso de otras nuevas, como la de Telegram, 
+manejandolo todo desde Node Red. \\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{BOTNODERED.png}
+    \caption{Flow de nodered del bot de telegram}
+    \label{elbot}
+\end{figure}
+
+\subsection{/info}
+
+Este comando proporciona un mensaje con información sobre el bot. Hace uso de
+los bloques receiver y sender de la api de telegram
+en nodered.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{comandoinfo.png}
+    \caption{Ejemplo de la conversación con el comando /info}
+    \label{info}
+\end{figure}
+
+\subsection{/tiempo\_hoy}\label{ch:t_hoy}
+
+Comando que usa la api de Openweather para obtener el tiempo en la ciudad que se requiera. 
+El código utilizado para procesar la información y crear el mensaje es el siguiente:\\
+
+\begin{verbatim}
+    
+    variable = msg.payload
+    variable2 = variable.main.temp -273
+    variable2 = Math.round(variable2)
+    if(variable.weather[0].main == "Clouds"){
+        cielo = "nublado "
+    }
+    if(variable.weather[0].main == "Clear"){
+        cielo = "despejado "
+    }
+    if(variable.weather[0].main == "Rain"){
+        cielo = "lluvioso "
+    }
+    if(variable2<=10){
+        variable3= "";
+        
+    }else{
+        if(variable2<=20){
+            variable3= "";
+        }else{
+            variable3= "";
+        }
+        
+    }
+    msg.payload={
+        chatId: 1081269815,
+        type: "message",
+        content: "La temperatura en "+ variable.name + " es:  " 
+        + variable2 +  " grados centigrados " + variable3 + "\n" +
+        "Podemos ver el cielo " + cielo
+        
+    }
+    return msg;
+\end{verbatim}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{comandotiempo_hoy.png}
+    \caption{Tiempo en la ciudad de Granada}
+    \label{ebot_thoy}
+\end{figure}
+
+\subsection{/caracas}
+
+Este comando realiza el mismo proceso que el anterior \ref{ch:t_hoy}, con la diferencia interna de que en vez de usar
+el nodo \verb|httpRequest| usaremos el propio nodo de la api de Openweather: 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{tiempoCaracas.png}
+    \caption{Tiempo en la ciudad de Caracas, Venezuela}
+    \label{tencaracas}
+\end{figure}
+
+\subsection{/presio}
+
+En ejemplo hacemos uso de la api de REData para sacar el  precio actual del megavatio/hora:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{comandopRESIO.png}
+    \caption{Precio a día de hoy del megavatio}
+    \label{presio}
+\end{figure}
+
+\subsection{/cripto}
+
+Por último, se ha creado un comando que, conectando con el nodo de la API de Binance, nos da el precio y la variación en las últimas 
+24 horas de este. Veamos el código para procesar el mensaje:
+
+\begin{verbatim}
+    variable = msg.payload
+    if(variable.priceChangePercent <= 0){
+        cambio = ""
+        cambiado = "bajado "
+    }
+    else{
+        cambio = ""
+        cambiado = "subido "
+    }
+    msg.payload={
+        chatId: 1081269815,
+        type: "message",
+        content: "El precio de bitcoin es: " + variable.lastPrice + " dólares,"
+        + " el precio ha " + cambiado + cambio + "en las últimas 24 horas un " +
+        variable.priceChangePercent + " por ciento."
+    }
+    
+    return msg;
+
+\end{verbatim}    
+
+Y ahora podemos observar la conversación con el bot:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{comando_bitcoin.png}
+    \caption{Precio de bitcoin y variación}
+    \label{presiobtc}
+\end{figure}
+
+\section{Link al Github}
+Como se comentó en clase, se ha ido actualizando un repositorio de Github con las capturas JSON y códigos usados en la práctica para tener bien documentado todo en caso de que el profesor
+requiera consultarlo para la evaluacion de la práctica. el link al repositorio es el siguiente:\\
+
+\verb|https://github.com/leocadpin/Comunicaciones_Leopoldo_Cadavid|
+
+
+
+\end{document}
