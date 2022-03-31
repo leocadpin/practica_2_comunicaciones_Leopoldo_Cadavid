@@ -89,14 +89,36 @@ Pasos:
 
 \end{itemize}
 
+\section{Sessión 3}
 
 
 
+El profesor nos da especificaciones: 
+\begin{itemize}
+    \item \textbf{Red:} Cudy-081c ,  \textbf{Clave:} Comunica2022
+    \item Nos conectamos a la IP: 192.168.10.100
+    \item \textbf{Peticiones:} nos metemos en Nodered y con el 
+    nodo \textit{http request} con el método \textbf{get y url 192.168.10.110/relay/0?turn=off}. Con esto, nos conectaremos al relé de 
+    la estación de clase y podemos encender o apagar el relé según consideremos. 
+ 
+\end{itemize}
 
 
 
+\section{Sesión 4}
 
+La idea de esta sesión es cambiar el uso de http requests, por 
+el uso de nodos mqtt, para que la carga de las conexiones recaiga sobre
+el broker, en este caso la raspberry, en vez de en el shelly.
 
+\begin{itemize}
+    \item creamos nodo mqtt
+    \item Debemos configurar info del broker: Clave: comunicacionespass;
+    IP: 192.16810.144
+    \item configuramos el topic según los intereses 
+\end{itemize}
 
-
+El siguiente paso de la sesión será ver como podemos ver el topic del
+shelly donde se estan publicando los datos de la potencia.
 \end{document}
+
