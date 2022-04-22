@@ -1,7 +1,6 @@
 \BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
-\BOOKMARK [1][-]{section.2}{Sesi\363n 1}{}% 2
-\BOOKMARK [1][-]{section.3}{Sesi\363n 2}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Continuaci\363n del uso de Ubidots}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Iniciaci\363n de control automatico}{section.3}% 5
-\BOOKMARK [1][-]{section.4}{Sessi\363n 3}{}% 6
-\BOOKMARK [1][-]{section.5}{Sesi\363n 4}{}% 7
+\BOOKMARK [1][-]{section.2}{Sesi\363n 1: Ubidots}{}% 2
+\BOOKMARK [1][-]{section.3}{Sesi\363n 2: Introducci\363n al entorno de Shelly}{}% 3
+\BOOKMARK [1][-]{section.4}{Sesi\363n 3: Uso del protocolo HTTP Request}{}% 4
+\BOOKMARK [1][-]{section.5}{Sesi\363n 4: Uso del MQTT}{}% 5
+\BOOKMARK [1][-]{section.6}{Ampliaciones finales}{}% 6

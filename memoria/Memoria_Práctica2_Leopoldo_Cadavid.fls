@@ -151,24 +151,84 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.toc
 INPUT /home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT /home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.toc
 INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
 INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
-INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/nodered_ubidots.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/nodered_ubidots.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/nodered_ubidots.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/deviceprimero.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/deviceprimero.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/deviceprimero.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/ampliacion_añadir_parametroenjson.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/ampliacion_añadir_parametroenjson.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/ampliacion_añadir_parametroenjson.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-10 14-28-16.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-10 14-28-16.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-10 14-28-16.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/conexionaashely.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/conexionaashely.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/conexionaashely.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Botones_con_flow.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Botones_con_flow.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Botones_con_flow.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/botones_ui_nodered.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/botones_ui_nodered.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/botones_ui_nodered.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/botones_y_lectura.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/botones_y_lectura.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/botones_y_lectura.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/dashboarestadorele.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/dashboarestadorele.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/dashboarestadorele.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/mqttconvisualiz.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/mqttconvisualiz.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/mqttconvisualiz.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-31 14-18-35.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-31 14-18-35.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-31 14-18-35.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-31 14-19-14.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-31 14-19-14.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/Captura de pantalla de 2022-03-31 14-19-14.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/estadoreleybotones.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/estadoreleybotones.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/estadoreleybotones.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/ampliaciontelegram.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/ampliaciontelegram.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/ampliaciontelegram.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/telegram_encender_apagar.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/telegram_encender_apagar.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/telegram_encender_apagar.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/resultadoencenderapagar.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/resultadoencenderapagar.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/resultadoencenderapagar.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/tempshelly.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/tempshelly.png
+INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/tempshelly.png
 INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
 INPUT /home/leo/Escritorio/coms/practica_2/memoria/imagenes/logo-ua.png
 INPUT /home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.aux
@@ -178,3 +238,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
