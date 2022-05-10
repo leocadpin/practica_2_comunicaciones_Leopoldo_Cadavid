@@ -1,0 +1,342 @@
+[
+    {
+        "id": "7d64cc014a38a194",
+        "type": "tab",
+        "label": "Flow 11",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7b97dc2cbb137953",
+        "type": "telegram command",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "command": "/encender_rele",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "cc609c81148f0dd9",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "0445bb29bfd776da"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "abfb4009dcad1aab",
+        "type": "telegram command",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "command": "/apagar_rele",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "cc609c81148f0dd9",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "15d240f5455063b1"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ea195d0120db50c1",
+        "type": "mqtt out",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "topic": "shellies/shellyem1/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1ea80fabc4fa2172",
+        "x": 590,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0445bb29bfd776da",
+        "type": "function",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "func": "msg.payload = \"on\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "ea195d0120db50c1",
+                "ebbb77ccdf108970"
+            ]
+        ]
+    },
+    {
+        "id": "15d240f5455063b1",
+        "type": "function",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "func": "msg.payload = \"off\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "ea195d0120db50c1",
+                "ebbb77ccdf108970"
+            ]
+        ]
+    },
+    {
+        "id": "ebbb77ccdf108970",
+        "type": "debug",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3b5dddc87d9ab12d",
+        "type": "telegram command",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "command": "/temp_shelly",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "cc609c81148f0dd9",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 420,
+        "wires": [
+            [
+                "def71db01a70fbb5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4d979825983f0642",
+        "type": "telegram sender",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "bot": "cc609c81148f0dd9",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94350be7427818a2",
+        "type": "change",
+        "z": "7d64cc014a38a194",
+        "d": true,
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tempshell",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4f5574c866169ba",
+        "type": "mqtt in",
+        "z": "7d64cc014a38a194",
+        "d": true,
+        "name": "",
+        "topic": "/clase/temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1ea80fabc4fa2172",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "94350be7427818a2"
+            ]
+        ]
+    },
+    {
+        "id": "def71db01a70fbb5",
+        "type": "function",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "func": "msg.payload={\n    chatId: 1081269815,\n    type: \"message\",\n    content: tempshell.a\n}\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f40fe09a2f5a5d3",
+        "type": "change",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tempshell.a",
+                "pt": "global",
+                "to": "23",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "506b49a78ec3aba9",
+        "type": "inject",
+        "z": "7d64cc014a38a194",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 360,
+        "wires": [
+            [
+                "2f40fe09a2f5a5d3"
+            ]
+        ]
+    },
+    {
+        "id": "cc609c81148f0dd9",
+        "type": "telegram bot",
+        "botname": "leobot",
+        "usernames": "@panilo2013,@leocadpi",
+        "chatids": "1081269815",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "100",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "1ea80fabc4fa2172",
+        "type": "mqtt-broker",
+        "name": "192.168.10.144",
+        "broker": "192.168.10.144",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]

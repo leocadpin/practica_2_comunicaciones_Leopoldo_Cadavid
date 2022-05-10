@@ -1,0 +1,307 @@
+[
+    {
+        "id": "ea9dff24525af49c",
+        "type": "tab",
+        "label": "Flow 10",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b1f656b2fe05b11e",
+        "type": "mqtt in",
+        "z": "ea9dff24525af49c",
+        "name": "",
+        "topic": "/clase/prueba",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1ea80fabc4fa2172",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "0677214c9c40a785"
+            ]
+        ]
+    },
+    {
+        "id": "df15f3b2798bb685",
+        "type": "mqtt in",
+        "z": "ea9dff24525af49c",
+        "name": "",
+        "topic": "/clase/humedad",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1ea80fabc4fa2172",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "4adb629a9e73a938"
+            ]
+        ]
+    },
+    {
+        "id": "b2a8c37d4ac47fc0",
+        "type": "mqtt in",
+        "z": "ea9dff24525af49c",
+        "name": "",
+        "topic": "/clase/temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1ea80fabc4fa2172",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "f9a656a7eae5588d"
+            ]
+        ]
+    },
+    {
+        "id": "fc17f51868ee8192",
+        "type": "inject",
+        "z": "ea9dff24525af49c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36f6d5aa1fe3979a",
+        "type": "inject",
+        "z": "ea9dff24525af49c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "487a5998f14eb654",
+        "type": "mqtt out",
+        "z": "ea9dff24525af49c",
+        "name": "",
+        "topic": "shellies/shellyem1/relay/0",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1ea80fabc4fa2172",
+        "x": 550,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c95551e1f63ba899",
+        "type": "mqtt in",
+        "z": "ea9dff24525af49c",
+        "name": "",
+        "topic": "shellies/shellyem1/relay/0",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1ea80fabc4fa2172",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "ee9ae0dbdf95a739",
+                "5f5a5e70f91ed92b"
+            ]
+        ]
+    },
+    {
+        "id": "ee9ae0dbdf95a739",
+        "type": "debug",
+        "z": "ea9dff24525af49c",
+        "name": "estado rele",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0677214c9c40a785",
+        "type": "debug",
+        "z": "ea9dff24525af49c",
+        "name": "prueba",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "4adb629a9e73a938",
+        "type": "debug",
+        "z": "ea9dff24525af49c",
+        "name": "humedad",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f9a656a7eae5588d",
+        "type": "debug",
+        "z": "ea9dff24525af49c",
+        "name": "temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5f5a5e70f91ed92b",
+        "type": "ui_gauge",
+        "z": "ea9dff24525af49c",
+        "name": "Estado shelly mqtt",
+        "group": "f8e65f6ffbe89c56",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "compass",
+        "title": "relé",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 530,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "1ea80fabc4fa2172",
+        "type": "mqtt-broker",
+        "name": "192.168.10.144",
+        "broker": "192.168.10.144",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f8e65f6ffbe89c56",
+        "type": "ui_group",
+        "name": "shely1",
+        "tab": "ba40c27694b026ff",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ba40c27694b026ff",
+        "type": "ui_tab",
+        "name": "Shely",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
