@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1650650976 "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.tex" "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.pdf" "Memoria_Práctica2_Leopoldo_Cadavid" 1650650981
+["pdflatex"] 1650650976 "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.tex" "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.pdf" "Memoria_Práctica2_Leopoldo_Cadavid" 1652205606
   "/etc/texmf/web2c/texmf.cnf" 1645144018 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.aux" 1650650977 4395 24102b24818bc4c4c1a30b17a21ce2b7 ""
-  "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.tex" 1650650981 12099 b3c6293170b7e3b599ce9a2b81e9acde ""
+  "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.tex" 1652205606 12099 b3c6293170b7e3b599ce9a2b81e9acde ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -84,7 +84,7 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645148542 8261170 fae12596ed6e02689a91d485608a5566 ""
   "Memoria_Práctica2_Leopoldo_Cadavid.aux" 1650650977 4395 24102b24818bc4c4c1a30b17a21ce2b7 "pdflatex"
   "Memoria_Práctica2_Leopoldo_Cadavid.out" 1650650977 382 dc45579cefd35e5ae612b9e561660902 "pdflatex"
-  "Memoria_Práctica2_Leopoldo_Cadavid.tex" 1650650981 12099 b3c6293170b7e3b599ce9a2b81e9acde ""
+  "Memoria_Práctica2_Leopoldo_Cadavid.tex" 1652205606 12099 b3c6293170b7e3b599ce9a2b81e9acde ""
   "Memoria_Práctica2_Leopoldo_Cadavid.toc" 1650650977 520 7f1026b01ddc3299822b6ccc869adb17 "pdflatex"
   "imagenes/Botones_con_flow.png" 1648128820 18983 1fc5b8ae02401555a6f0a9c4a19c70f8 ""
   "imagenes/Captura de pantalla de 2022-03-10 14-28-16.png" 1646918896 123147 ad6337b7be4ad5f8e3442022cca755ba ""
@@ -105,10 +105,10 @@
   "imagenes/telegram_encender_apagar.png" 1650650118 47394 d085454a738f6ec77dd9e76a841ff668 ""
   "imagenes/tempshelly.png" 1650650209 41719 0aeafbebaadab7b120d4c34f72cf6225 ""
   (generated)
-  "Memoria_Práctica2_Leopoldo_Cadavid.pdf"
-  "Memoria_Práctica2_Leopoldo_Cadavid.toc"
-  "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.log"
   "Memoria_Práctica2_Leopoldo_Cadavid.aux"
-  "Memoria_Práctica2_Leopoldo_Cadavid.log"
-  "Memoria_Práctica2_Leopoldo_Cadavid.out"
+  "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.log"
+  "Memoria_Práctica2_Leopoldo_Cadavid.pdf"
   "/home/leo/Escritorio/coms/practica_2/memoria/Memoria_Práctica2_Leopoldo_Cadavid.pdf"
+  "Memoria_Práctica2_Leopoldo_Cadavid.out"
+  "Memoria_Práctica2_Leopoldo_Cadavid.toc"
+  "Memoria_Práctica2_Leopoldo_Cadavid.log"
